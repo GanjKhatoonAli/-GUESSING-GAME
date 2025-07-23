@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+  height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+   background: linear-gradient(to left ,rgb(2, 2, 41), black,rgb(80, 64, 64));
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.container{
+  max-width: 660px;
+  border: 2px ridge black;
+  padding: 35px 50px;
+  box-shadow: 2px 5px 10px silver;
+}
+h1{
+  border-bottom: 2px ridge silver;
+  font-size: 40px;
+  text-shadow: 2px 2px 5px brown;
+}
+.robot{
+  font-size: 20px;
+}
+.robot img{
+  width: 200px;
+  height: 160px;
+  vertical-align: middle;
+}
+/* Style for input field */
+input{
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border 0.3s ease;
+  width: 120px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+input[type="number"]:focus {
+  border-color: rgb(18, 72, 94);
+}
+
+/* Style for the Guess button */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgb(38, 92, 114); /* Green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+   margin-top: 20px;
+}
+
+button:hover {
+  background-color: rgb(14, 68, 90);
+}
+#result {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #f7eded;
+}
+
+#score {
+    font-size: 16px;
+    margin-top: 10px;
+}
+@media (max-width:760px) {
+    .container {
+      width:100%;
+        padding: 20px;
+    }
+
+    input[type="number"] {
+        width: auto;
+    }
+}
